@@ -19,11 +19,17 @@ a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:4px}
 .expertise{background:linear-gradient(135deg,var(--navy2),var(--navy))}
 .blueprint-card:after{border-color:rgba(220,20,60,.65);box-shadow:0 0 0 35px rgba(220,20,60,.06),0 0 0 70px rgba(220,20,60,.04)}
 .contact{background:linear-gradient(125deg,var(--navy2),var(--navy))}
-footer{grid-template-columns:1.7fr 1.05fr 1.4fr;background:#fff;color:var(--navy);border-top:0}
+footer{grid-template-columns:1.7fr 1.05fr 1.4fr;align-items:stretch;background:#fff;color:var(--navy);border-top:0}
 footer>p,footer>div{color:#53657f}
 footer>div small{color:var(--amber)}
 footer>div a{color:var(--navy);font-weight:700}
 footer .copyright{border-top-color:rgba(0,56,147,.18);color:#697991}
+.copyright{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.website-history{margin-left:auto;text-align:right;font-size:10px;line-height:1.6}
+.site-live{display:inline-flex;align-items:center;gap:6px;margin-left:8px;padding:3px 8px;border:1px solid rgba(18,140,74,.28);border-radius:999px;background:rgba(37,211,102,.07);color:#087b3b;font-weight:700;white-space:nowrap}
+.site-live i{width:6px;height:6px;border-radius:50%;background:#18a957;box-shadow:0 0 0 3px rgba(24,169,87,.12);animation:live-pulse 2.4s ease-in-out infinite}
+@keyframes live-pulse{50%{box-shadow:0 0 0 5px rgba(24,169,87,0)}}
+@media (prefers-reduced-motion:reduce){.site-live i{animation:none}}
 .footer-brand strong{color:var(--navy)}
 .footer-brand small{color:#53657f}
 .footer-brand .brand-logo{box-shadow:none}
@@ -35,12 +41,12 @@ footer .copyright{border-top-color:rgba(0,56,147,.18);color:#697991}
 .credentials small{margin:0 0 7px;color:#75849a;font-size:8px;font-weight:700;letter-spacing:1.3px}
 .credentials strong{color:var(--navy);font:600 18px/1.2 "Barlow Condensed";letter-spacing:.35px;text-transform:uppercase}
 .credential-item:last-child{border-right:0}
-.footer-identity{display:grid;grid-template-columns:minmax(235px,1.15fr) minmax(155px,.85fr);gap:30px;align-items:stretch}.identity-actions{display:flex;flex-direction:column;align-items:flex-start;padding-right:24px;border-right:1px solid rgba(0,56,147,.15)}
+.footer-identity{display:grid;grid-template-columns:minmax(235px,1.15fr) minmax(155px,.85fr);gap:30px;align-items:stretch;height:100%}.identity-actions{display:flex;flex-direction:column;align-items:flex-start;height:100%;padding-right:24px;border-right:1px solid rgba(0,56,147,.15)}
 .journey-link{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;margin-top:24px;min-width:210px;padding:13px 16px;border:1px solid rgba(0,56,147,.22);color:var(--navy);font-size:9px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;transition:color .2s,background .2s,border-color .2s}.journey-link span{color:var(--amber);font-size:13px}.journey-link:hover{background:var(--navy);border-color:var(--navy);color:#fff}
 .footer-whatsapp{margin-top:10px;border-color:#25d366;background:transparent;color:#128c4a}.footer-whatsapp span{display:inline-flex;align-items:center;gap:8px;color:inherit;font-size:9px}.footer-whatsapp b{color:#25d366;font-size:13px}.footer-whatsapp:hover{border-color:#128c4a;background:rgba(37,211,102,.08);color:#087b3b}
 .footer-portal{margin-top:10px;border-color:var(--navy);background:var(--navy);color:#fff}.footer-portal span,.footer-portal b{color:#fff;font-size:9px}.footer-portal:hover{background:var(--navy2);border-color:var(--navy2)}
 .banking-channels{width:100%;margin-top:18px;padding-top:17px;border-top:1px solid rgba(0,56,147,.15)}.banking-channels>small{display:block;margin-bottom:11px;color:var(--navy);font-size:8px;font-weight:800;letter-spacing:1px}.banking-logos{display:flex;align-items:center;gap:7px}.banking-logos img,.banking-logos img:nth-child(2){display:block;width:44px;height:36px;padding:3px;object-fit:contain;background:#fff;border:1px solid rgba(0,56,147,.12)}.banking-logos img:first-child{width:96px;height:48px;padding:4px;border-color:rgba(220,20,60,.2)}.banking-channels p{margin:10px 0 0;max-width:230px;color:#7a899b;font-size:8px;line-height:1.5}.footer-reserved{display:flex;flex-direction:column;align-items:flex-start;min-height:1px}.reserved-journey-link{margin-top:10px;border-bottom-color:var(--amber)}
-.footer-details{display:grid;grid-template-columns:1fr;gap:28px;padding:12px 4vw 0;border-left:1px solid rgba(0,56,147,.15);border-right:1px solid rgba(0,56,147,.15)}
+.footer-details{display:grid;grid-template-columns:1fr;gap:28px;height:100%;padding:12px 4vw 0;border-left:1px solid rgba(0,56,147,.15);border-right:1px solid rgba(0,56,147,.15)}
 .footer-contact,.footer-address{padding:0}
 .footer-contact a{overflow-wrap:anywhere;font-size:12px;line-height:1.55}
 .footer-address address{max-width:430px;color:#53657f;font-size:11px;font-style:normal;line-height:1.8}
@@ -62,7 +68,14 @@ footer .copyright{border-top-color:rgba(0,56,147,.18);color:#697991}
 .email-directory a{display:block;overflow-wrap:anywhere;font-size:12px;line-height:1.5}
 .email-or{display:flex;align-items:center;gap:8px;margin:7px 0;color:var(--amber);font-size:7px;font-weight:800;letter-spacing:1.2px}.email-or:before,.email-or:after{content:"";width:14px;height:1px;background:rgba(220,20,60,.35)}
 .email-directory p{margin:9px 0 0;color:#71809a;font-size:10px;line-height:1.65}
-.footer-contact>small,.footer-address>small,.email-directory small,.operational-reach>small{font-size:8px}.footer-contact a,.footer-address address,.email-directory a,.email-directory p,.operational-reach p,.operational-reach .reach-team{font-size:8px;line-height:1.55}
+.footer-contact>small,.footer-address>small,.email-directory small,.operational-reach>small{font-size:10px}
+.footer-contact a,.footer-address address,.email-directory a{font-size:12px;line-height:1.65}
+.email-directory p,.operational-reach p,.operational-reach .reach-team{font-size:10px;line-height:1.65}
+.credentials small,.banking-channels>small{font-size:10px}
+.journey-link,.footer-whatsapp span,.footer-portal span,.footer-portal b,.map-link{font-size:11px}
+.banking-channels p{font-size:10px;line-height:1.65}
+.operational-reach li{font-size:10px}
+.email-or{font-size:9px}
 
 @media (max-width:1100px) and (min-width:851px){
   .site-header nav{gap:20px}.site-header .brand{min-width:345px}.header-cta{display:none}
@@ -148,6 +161,7 @@ footer .copyright{border-top-color:rgba(0,56,147,.18);color:#697991}
 
 @media(max-width:520px){
   .brand{gap:8px}.brand-logo{width:45px;height:45px;flex-basis:45px;border-width:2px}.brand strong{font-size:17px;letter-spacing:1.1px}.brand small{font-size:5.8px;letter-spacing:.58px}.brand-mark{transform:scale(.82) skewY(-15deg);transform-origin:left center}
+  .copyright{align-items:flex-start;flex-direction:column;gap:8px}.website-history{margin-left:0;text-align:left}
   .eyebrow{font-size:10px;letter-spacing:1.6px}.eyebrow span{width:24px}
   .hero-actions{align-items:stretch;flex-direction:column;gap:18px}.hero-actions .button{width:100%}.hero-actions .text-link{text-align:center}
   .hero-foot{justify-content:space-between}.hero-foot div:first-child{display:flex}.hero-foot div:nth-child(2){display:flex!important;text-align:right}.hero-foot strong{font-size:9px}
@@ -156,7 +170,7 @@ footer .copyright{border-top-color:rgba(0,56,147,.18);color:#697991}
   .principle-visual{min-height:420px;padding:54px 34px}.blueprint-card{width:100%;max-width:290px;height:340px;box-shadow:16px 16px 0 rgba(0,56,147,.16)}.blueprint-card strong{font-size:36px}
   .principle-item{grid-template-columns:32px 1fr}.principle-item p{font-size:12px}
   .credentials{display:block;padding:0 22px}.credentials-intro,.credential-item{min-height:auto;padding:18px 0;border-right:0;border-bottom:1px solid rgba(0,56,147,.14)}.credentials-intro{padding:22px 0}.credential-item:last-child{border-top:0}.credentials strong{font-size:17px}
-  .footer-contact,.footer-address{padding-top:0}.footer-contact>small,.footer-address>small,.email-directory small,.operational-reach>small,.banking-channels>small{font-size:9px}.footer-address address,.email-directory a,.email-directory p,.footer-contact a,.operational-reach p,.operational-reach .reach-team,.banking-channels p{font-size:9px;line-height:1.6}
+  .footer-contact,.footer-address{padding-top:0}.footer-contact>small,.footer-address>small,.email-directory small,.operational-reach>small,.banking-channels>small{font-size:10px}.footer-address address,.email-directory a,.footer-contact a{font-size:12px;line-height:1.65}.email-directory p,.operational-reach p,.operational-reach .reach-team,.banking-channels p{font-size:10px;line-height:1.65}
   .logo-tile,.logo-tile.wide{width:148px;height:100px;flex-basis:148px;padding:12px}
   .service-group summary{grid-template-columns:25px 1fr 22px}.service-group summary .service-icon{display:none}.service-group summary strong{font-size:22px}.service-body>div{padding:19px 16px}
 }
