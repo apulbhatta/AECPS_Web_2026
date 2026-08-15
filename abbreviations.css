@@ -1,0 +1,31 @@
+.abbreviations-page .legal-hero:after{content:"A—Z";right:3vw;letter-spacing:-7px}
+.abbreviations-page .legal-hero-copy{max-width:830px}
+.abbreviations-page .legal-hero-copy h1{font-size:clamp(66px,7.7vw,118px)}
+.glossary-layout{grid-template-columns:minmax(220px,290px) minmax(0,920px)}
+.glossary-section{padding:52px 0 20px;border-top:1px solid rgba(0,56,147,.16);scroll-margin-top:30px}
+.glossary-section>header{display:grid;grid-template-columns:52px 1fr;gap:20px;align-items:start;margin-bottom:24px}
+.glossary-section>header>span{padding-top:5px;color:#dc143c;font-size:8px;font-weight:800;letter-spacing:1px}
+.glossary-section>header small{display:block;margin-bottom:5px;color:#8a98a9;font-size:7px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.glossary-section h2{margin:0;color:#003893;font:600 clamp(31px,3vw,43px)/1 "Barlow Condensed";letter-spacing:.2px;text-transform:uppercase}
+.definition-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0}
+.definition-card{display:grid;grid-template-columns:115px 1fr;min-height:174px;margin:0;padding:25px;border:1px solid rgba(0,56,147,.13);background:#fff;transition:transform .2s,border-color .2s,box-shadow .2s}
+.definition-card:hover{transform:translateY(-3px);border-color:rgba(0,56,147,.32);box-shadow:0 12px 28px rgba(16,38,74,.07)}
+.definition-card dt{display:flex;align-items:flex-start;flex-direction:column;gap:8px;margin:0;padding-right:16px}
+.definition-card dt abbr{border:0;color:#dc143c;font:600 31px/1 "Barlow Condensed";letter-spacing:.4px;text-decoration:none;text-transform:uppercase;cursor:help}
+.definition-card dt small{color:#8d9aaa;font-size:6px;font-weight:700;letter-spacing:.8px;line-height:1.5;text-transform:uppercase}
+.definition-card dd{margin:0;padding-left:20px;border-left:1px solid rgba(0,56,147,.12)}
+.definition-card dd strong{display:block;color:#003893;font:600 17px/1.25 "Barlow Condensed";letter-spacing:.2px;text-transform:uppercase}
+.definition-card dd p{margin:10px 0 0;color:#65758a;font-size:9px;line-height:1.7}
+.definition-card dd p+strong{margin-top:18px;padding-top:16px;border-top:1px solid rgba(0,56,147,.1)}
+.featured-definition{grid-column:1/-1;grid-template-columns:150px 1fr;min-height:150px;border-color:rgba(220,20,60,.28);background:linear-gradient(110deg,#fff,#f2f6fb)}
+.featured-definition dt abbr{font-size:48px}
+.featured-definition dd strong{font-size:23px}
+.contextual-definition{grid-column:1/-1;grid-template-columns:150px 1fr}
+.wide-definition{grid-column:1/-1;grid-template-columns:150px 1fr;min-height:140px}
+.names-section{padding-bottom:0}
+.names-section>p{margin:0;padding:27px 30px;border-left:3px solid #dc143c;background:#fff;color:#5e6f83;font-size:10px;line-height:1.8}
+.legal-footer>div>strong{color:#003893;font:600 21px "Barlow Condensed";letter-spacing:1px}
+.legal-footer>div>span{margin-top:4px;color:#6b7b8f;font-size:8px;line-height:1.5}
+@media(max-width:900px){.glossary-layout{grid-template-columns:1fr}.abbreviations-page .legal-hero-copy h1{font-size:clamp(64px,17vw,95px)}}
+@media(max-width:650px){.definition-grid{grid-template-columns:1fr}.definition-card,.featured-definition,.contextual-definition,.wide-definition{grid-column:auto;grid-template-columns:1fr;min-height:0}.definition-card dt{padding:0 0 16px}.definition-card dd{padding:18px 0 0;border-top:1px solid rgba(0,56,147,.12);border-left:0}.glossary-section>header{grid-template-columns:34px 1fr;gap:8px}}
+@media(max-width:560px){.abbreviations-page .legal-hero-copy h1{font-size:48px;line-height:.9}.definition-card{padding:22px}.featured-definition dt abbr{font-size:40px}}

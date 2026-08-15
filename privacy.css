@@ -1,0 +1,56 @@
+.privacy-page{background:#f4f7fb;color:#10264a}
+.legal-header{position:absolute;background:rgba(0,31,83,.4)}
+.legal-hero{position:relative;isolation:isolate;min-height:570px;display:flex;align-items:flex-end;justify-content:space-between;gap:70px;overflow:hidden;padding:150px 8vw 78px;background:linear-gradient(125deg,#001f53 0%,#003893 74%,#174fa5 100%);color:#fff}
+.legal-hero:after{content:"PRIVACY";position:absolute;z-index:-1;right:-1vw;top:83px;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);font:600 clamp(130px,21vw,340px)/1 "Barlow Condensed";letter-spacing:-8px}
+.legal-grid{position:absolute;z-index:-2;inset:0;opacity:.11;background-image:linear-gradient(rgba(255,255,255,.25) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.25) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(90deg,#000,transparent 88%)}
+.legal-hero-copy{max-width:720px}
+.legal-hero-copy h1{margin:24px 0 20px;font:600 clamp(78px,9vw,138px)/.78 "Barlow Condensed";letter-spacing:-2px;text-transform:uppercase}
+.legal-hero-copy h1 em{color:#dc143c;font-style:normal}
+.legal-hero-copy>p:last-child{max-width:590px;margin:0;color:#bdcbe0;font-size:13px;line-height:1.75}
+.policy-meta{width:min(360px,31vw);flex:0 0 auto;border:1px solid rgba(255,255,255,.2);background:rgba(0,31,83,.48);backdrop-filter:blur(8px)}
+.policy-meta>div{display:grid;grid-template-columns:115px 1fr;gap:15px;align-items:center;padding:17px 20px;border-bottom:1px solid rgba(255,255,255,.14)}
+.policy-meta>div:last-child{border-bottom:0}
+.policy-meta small{color:#8fa5c2;font-size:7px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase}
+.policy-meta strong{font-size:10px;line-height:1.5;text-transform:uppercase}
+.policy-layout{display:grid;grid-template-columns:minmax(220px,290px) minmax(0,850px);justify-content:center;gap:clamp(50px,7vw,110px);padding:90px 7vw 110px}
+.policy-nav{position:sticky;top:40px;align-self:start;padding:27px 26px;border-top:3px solid #dc143c;background:#fff;box-shadow:0 12px 34px rgba(16,38,74,.06)}
+.policy-nav>p{margin:0 0 17px;color:#003893;font:600 19px "Barlow Condensed";letter-spacing:.5px;text-transform:uppercase}
+.policy-nav ol{margin:0;padding:0;list-style:none;counter-reset:policy-nav}
+.policy-nav li{counter-increment:policy-nav;border-top:1px solid rgba(0,56,147,.1)}
+.policy-nav li:before{content:counter(policy-nav,decimal-leading-zero);display:inline-block;width:25px;color:#a1adbc;font-size:7px}
+.policy-nav li a{display:inline-block;padding:11px 0;color:#53657d;font-size:9px;font-weight:600;transition:color .2s}
+.policy-nav li a:hover{color:#dc143c}
+.policy-contact-link{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding:13px 14px;background:#003893;color:#fff;font-size:8px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+.policy-contact-link span{color:#dc143c;font-size:12px}
+.policy-content{min-width:0}
+.policy-intro{margin-bottom:17px;padding:30px 34px;background:#003893;color:#fff}
+.policy-intro>span{color:#dc143c;font-size:7px;font-weight:700;letter-spacing:1.4px}
+.policy-intro p{margin:11px 0 0;color:#c4d0e0;font-size:12px;line-height:1.8}
+.policy-intro strong{color:#fff}
+.policy-section{display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;padding:48px 0;border-top:1px solid rgba(0,56,147,.16);scroll-margin-top:30px}
+.policy-section:first-of-type{border-top:0}
+.section-number{padding-top:8px;color:#dc143c;font-size:8px;font-weight:800;letter-spacing:1px}
+.policy-section h2{margin:0 0 22px;color:#003893;font:600 clamp(31px,3vw,43px)/1 "Barlow Condensed";letter-spacing:.2px;text-transform:uppercase}
+.policy-section h3{margin:26px 0 10px;color:#10264a;font:600 18px "Barlow Condensed";letter-spacing:.3px;text-transform:uppercase}
+.policy-section p,.policy-section li{color:#5c6d82;font-size:11px;line-height:1.85}
+.policy-section p{margin:0 0 15px}
+.policy-section p:last-child{margin-bottom:0}
+.policy-section ul{margin:10px 0 18px;padding:0;list-style:none}
+.policy-section li{position:relative;padding:6px 0 6px 22px}
+.policy-section li:before{content:"";position:absolute;left:0;top:15px;width:8px;height:2px;background:#dc143c}
+.policy-section strong{color:#10264a}
+.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:24px 0;background:rgba(0,56,147,.12);border:1px solid rgba(0,56,147,.12)}
+.fact-grid>div{min-height:94px;padding:20px;background:#fff}
+.fact-grid small{display:block;margin-bottom:8px;color:#8290a2;font-size:7px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.fact-grid strong{display:block;color:#003893;font:600 16px/1.35 "Barlow Condensed";text-transform:uppercase}
+.notice-box{margin-top:24px;padding:21px 23px;border-left:3px solid #dc143c;background:#eef3f9}
+.notice-box>strong{display:block;margin-bottom:7px;color:#003893;font:600 17px "Barlow Condensed";text-transform:uppercase}
+.notice-box p{margin:0;font-size:10px}
+.policy-contact>div>a{display:flex;justify-content:space-between;gap:14px;margin:10px 0;padding:14px 0;border-bottom:1px solid rgba(0,56,147,.18);overflow-wrap:anywhere;color:#003893;font-size:11px;font-weight:700}
+.policy-contact>div>a span{flex:0 0 auto;color:#dc143c}
+.legal-footer{grid-template-columns:1.45fr 1fr .55fr;padding-top:40px;background:#fff;border-top:1px solid rgba(0,56,147,.15)}
+.legal-footer .footer-brand .brand-logo{height:100px}
+.legal-footer>div{align-self:center}
+.legal-footer .copyright{grid-column:1/-1}
+@media(max-width:900px){.legal-hero{min-height:610px;display:block;padding:135px 22px 55px}.legal-hero-copy h1{font-size:clamp(75px,22vw,112px)}.policy-meta{width:100%;max-width:530px;margin-top:38px}.policy-meta>div{grid-template-columns:105px 1fr}.policy-layout{grid-template-columns:1fr;gap:32px;padding:55px 22px 80px}.policy-nav{position:relative;top:auto}.policy-nav ol{display:grid;grid-template-columns:1fr 1fr;column-gap:20px}.policy-content{width:100%}.privacy-page .site-header.open{position:fixed;background:#003893}.legal-footer{grid-template-columns:1fr 1fr}.legal-footer .footer-brand{grid-column:1/-1}.legal-footer .copyright{grid-column:1/-1}}
+@media(max-width:560px){.legal-hero{min-height:0}.legal-hero-copy h1{font-size:72px}.legal-hero-copy>p:last-child{font-size:11px}.policy-meta>div{grid-template-columns:90px 1fr;padding:14px}.policy-nav ol{grid-template-columns:1fr}.policy-section{grid-template-columns:1fr;gap:10px;padding:38px 0}.section-number{padding:0}.policy-section h2{font-size:31px}.policy-section p,.policy-section li{font-size:10.5px}.fact-grid{grid-template-columns:1fr}.fact-grid>div{min-height:0}.policy-intro{padding:24px}.legal-footer{grid-template-columns:1fr}.legal-footer .footer-brand{grid-column:1}.legal-footer .copyright{grid-column:1}}

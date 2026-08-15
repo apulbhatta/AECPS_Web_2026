@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restricted client portal for Apul Engineering (Consultancy) Paramarsha Sewa.">
+  <title>Client Portal | Apul Engineering (Consultancy) Paramarsha Sewa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="portal.css">
+</head>
+<body class="portal-page">
+  <main class="portal-shell">
+    <section class="portal-brand-panel">
+      <a class="portal-brand" href="index.html"><img src="assets/apul-engineering-logo.png" alt="Apul Engineering (Consultancy) Paramarsha Sewa logo"><span><strong>APUL ENGINEERING</strong><small>(CONSULTANCY) PARAMARSHA SEWA</small></span></a>
+      <div class="portal-intro"><p class="portal-kicker"><i></i> Client workspace</p><h1>Your project.<br><em>Clearly connected.</em></h1><p>A secure workspace for project progress, schedules, documents, inspections, and direct coordination with the AECPS team.</p></div>
+      <div class="portal-features"><span>Project status</span><span>Gantt schedules</span><span>Documents</span><span>Meetings</span></div>
+    </section>
+    <section class="login-panel">
+      <div class="preview-status"><i></i><span><small>PORTAL STATUS</small><strong>Secure client access</strong></span></div>
+      <div class="login-copy"><span>CLIENT ACCESS / 01</span><h2>Sign in to your portal</h2><p>Enter the Client ID and password issued to you by the AECPS Technical (IT) Team.</p></div>
+      <form id="portal-login">
+        <label for="client-id">Client ID or email</label><input id="client-id" name="client-id" type="text" autocomplete="username" required placeholder="Enter your client ID">
+        <label for="portal-password">Password</label><div class="password-field"><input id="portal-password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password"><button type="button" id="toggle-password" aria-label="Show password">Show</button></div>
+        <div class="login-meta"><label><input type="checkbox" name="remember"> Remember me</label><button type="button" class="text-button" id="forgot-password">Forgot password?</button></div>
+        <button class="portal-login-button" type="submit">Sign in securely <span>→</span></button><p class="portal-message" id="portal-message" role="status" aria-live="polite"></p>
+      </form>
+      <button class="create-account" type="button" id="create-account">Create a client account</button>
+      <div class="portal-support"><small>Need assistance?</small><a href="tel:+9779806417978">+977-9806417978</a><span>•</span><a href="mailto:info@apulengineeringconsultancy.site">Email support</a></div>
+      <a class="portal-home" href="index.html">← Back to homepage</a>
+      <div class="portal-trust" aria-label="Portal technology and security">
+        <div class="trust-group"><small>Powered by</small><img class="trust-jira" src="assets/portal/jira.webp" alt="Jira"></div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-group trust-security"><small>Secured by</small><span><img src="assets/portal/2fa.jpg" alt="Two-factor authentication"><img src="assets/portal/recaptcha.webp" alt="reCAPTCHA"></span></div>
+      </div>
+    </section>
+  </main>
+  <dialog class="portal-dialog" id="portal-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close">×</button><span class="dialog-index">AECPS CLIENT ACCESS POLICY</span>
+    <h2 id="dialog-title"></h2><p id="dialog-copy"></p>
+    <div class="dialog-actions"><a href="tel:+9779806417978">Call AECPS</a><a href="mailto:info@apulengineeringconsultancy.site?subject=Client%20Portal%20Technical%20Support">Contact us now</a></div>
+  </dialog>
+  <script src="portal.js"></script>
+</body>
+</html>

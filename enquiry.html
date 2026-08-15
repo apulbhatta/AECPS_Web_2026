@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send a project enquiry to Apul Engineering (Consultancy) Paramarsha Sewa.">
+  <title>Project Enquiry | Apul Engineering (Consultancy) Paramarsha Sewa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enquiry.css">
+</head>
+<body class="enquiry-page">
+  <header class="site-header enquiry-header">
+    <a class="brand" href="index.html" aria-label="Apul Engineering (Consultancy) Paramarsha Sewa home">
+      <img class="brand-logo" src="assets/apul-engineering-logo.png" alt="">
+      <span><strong>APUL ENGINEERING</strong><small>(CONSULTANCY) PARAMARSHA SEWA</small></span>
+    </a>
+    <nav aria-label="Main navigation"><a href="index.html#expertise">Expertise</a><a href="index.html#about">About</a><a href="journey.html">Our Journey</a><a href="careers.html">Careers</a><a href="index.html#contact">Contact</a></nav>
+    <a class="header-cta" href="index.html">Back to home <span>↗</span></a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main class="enquiry-main">
+    <section class="enquiry-intro">
+      <p class="eyebrow"><span></span> Project enquiry</p>
+      <h1>Let’s discuss<br><em>what you’re building.</em></h1>
+      <p>Share a few details and choose how you would like to contact our team. Your information stays on your device until you select email or WhatsApp.</p>
+      <div class="direct-contact">
+        <small>Prefer to speak directly?</small>
+        <a href="tel:+9779806417978">Call +977-9806417978 <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="enquiry-card" aria-labelledby="form-title">
+      <div class="form-heading"><span>ENQUIRY / 01</span><h2 id="form-title">Tell us about your project</h2><p>Fields marked * are required.</p></div>
+      <form id="enquiry-form">
+        <div class="field"><label for="name">Full name *</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name"></div>
+        <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+977-"></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="field"><label for="service">Service required *</label><select id="service" name="service" required><option value="" selected disabled>Select a service area</option><option>Study & Assessment</option><option>Design & Documentation</option><option>Construction & Delivery</option><option>Management & Quality</option><option>Other / Not sure</option></select></div>
+        <div class="field full"><label for="location">Project location</label><input id="location" name="location" type="text" placeholder="Municipality, district, or site location"></div>
+        <div class="field full"><label for="message">Project details *</label><textarea id="message" name="message" required rows="4" placeholder="Briefly describe the project, current stage, and support you need."></textarea></div>
+        <fieldset class="field full preference"><legend>Preferred response method</legend><label><input type="radio" name="preferred" value="Phone" checked> Phone</label><label><input type="radio" name="preferred" value="Email"> Email</label><label><input type="radio" name="preferred" value="WhatsApp"> WhatsApp</label></fieldset>
+        <p class="form-privacy full">Your details are used to respond to this enquiry. Read our <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy <span aria-hidden="true">↗</span></a>.</p>
+        <div class="form-status full" id="form-status" role="status" aria-live="polite"></div>
+        <div class="contact-options full">
+          <button class="contact-option email-option" type="button" data-action="email"><span>01</span><strong>Send via email</strong><small>Opens your email application ↗</small></button>
+          <button class="contact-option whatsapp-option" type="button" data-action="whatsapp"><span>02</span><strong>Send via WhatsApp</strong><small>Opens a WhatsApp chat ↗</small></button>
+          <a class="contact-option call-option" href="tel:+9779806417978"><span>03</span><strong>Call us</strong><small>+977-9806417978 ↗</small></a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="enquiry.js"></script>
+</body>
+</html>
