@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /portal.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /portal.html
+
+Sitemap: https://www.apulengineeringconsultancy.site/sitemap.xml
